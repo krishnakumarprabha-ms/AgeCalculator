@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Age calculator</title>
+    <link rel="stylesheet" href="Assignment_004.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="heading">Age Calculator</h1>
+        <div class="form">
+            <form>
+                <div class="input">
+                    <label for="date">Enter the date: </label>
+                    <input type="number" name="date" id="date" min="1" max="31" required>
+                </div>
+                <div class="input">
+                    <label for="month">Enter the month: </label>
+                    <input type="number" name="month" id="month" min="1" max="12" required>
+                </div>
+                <div class="input">
+                    <label for="year">Enter the year: </label>
+                    <input type="number" name="year" id="year" required>
+                </div>     
+            </form>
+            <button onclick="getUservalue()">submit</button>
+        </div>
+        <div class="output">
+            <p id="ageyear">Years</p>
+            <p id="agemonth">Months</p>
+            <p id="ageday">Days</p>
+            <p id="isMajor"></p>
+        </div>
+    </div>
+    <script src="Assignment_004.js"></script>
+</body>
+</html>
